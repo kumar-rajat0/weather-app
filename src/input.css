@@ -1,0 +1,91 @@
+@import "tailwindcss";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+}
+
+
+.weather-input .feelslike,
+.weather-input .description,
+.weather-input .date,
+.weather-input .city{
+    padding: 5px 0; 
+}
+    
+.weather-input{
+    background: #78c1f3;
+    padding: 1rem 2.5rem;
+}
+.input-group{
+    margin: 2rem 0;
+}
+.input-group input{
+    padding: 1rem;
+}
+
+.weather-output{
+    margin-left: 25%;
+    padding: 2rem;
+}
+.sun span{
+    align-items: center;
+    display: flex;
+}
+
+.weatherIcon{
+    background-position: 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    display: block;
+    height: 25%;
+    margin: 2rem auto;
+}
+.Highlights div ,
+.Forecast div{
+    height: 200px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #78c1f3;
+    border-radius: 20px;
+    padding: 1rem;
+}
+.Forecast{
+    display: grid;
+    grid-template-columns: repeat(4,260px);
+    grid-auto-flow: row;
+    row-gap: 1rem;
+    column-gap: 10px;
+}
+#tempa span{
+    display: flex;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:grey;
+}
+.temperature span{
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.forecast-desc{
+    color: grey;
+    font-size: 0.8rem;text-align: center;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+.description i{
+    font-size: 35px;
+}
