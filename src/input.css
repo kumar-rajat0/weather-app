@@ -99,7 +99,7 @@ body{
     font-size: 35px;
 }
 
-
+/*For Mobile*/
 @media(min-width:375px)and 
 (max-width:667px){
     body{
