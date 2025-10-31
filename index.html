@@ -12,7 +12,7 @@
   </head>
   <body class="body  h-full">
    <div class="container flex items-center">
-    <div class="weather-input w-[25%] fixed inset-[0] ">
+    <div class="weather-input w-1/4 fixed inset-0">
       <div class="input-group relative flex items-center  ">
         <input class="inp bg-white capitalize text-base rounded-md w-full outline-none border-none text-center " type="text"  id="userLocation" placeholder="Search For Places.." />
         <select class="converter absolute right-[200px] h-14 bg-blue-500 rounded-b-sm border-none outline-none text-lg cursor-pointer" id="converter">
@@ -32,22 +32,21 @@
       <div class="city "></div>
     </div>
 
-    <div class="weather-output w-[75%] fixed inset-0 bg-amber-200 overflow-auto">
+  <div class="weather-output w-3/4 ml-[25%] bg-amber-200 overflow-auto">
       <h2 class="heading text-center text-3xl"  id="heading2">Today's Highlight</h2>
-      <div class="Highlights grid grid-cols-[repeat(3,280px)] grid-flow-row gap-x-[10px] gap-y-[1rem]">
-        <div class="humidity h-[170px] grid items-center justify-center text-center text-2xl bg-sky-300 rounded-3xl p-4 ">
+      <div class="Highlights grid grid-cols-3 grid-flow-row gap-x-2.5 gap-y-4">
+        <div class="humidity h-44 grid items-center justify-center text-center text-2xl bg-sky-300 rounded-3xl p-4">
           humidity
           <i class="fa-solid fa-water text-5xl"></i>
           <h1 id="HValue"></h1>
         </div>
-
-          <div class="wind-speed h-[170px] grid items-center justify-center text-center text-2xl bg-sky-300 rounded-3xl p-4" >
+          <div class="wind-speed h-44 grid items-center justify-center text-center text-2xl bg-sky-300 rounded-3xl p-4" >
           wind speed
           <i class="fa-solid fa-wind text-5xl"></i>
           <h1 id="WValue"></h1>
         </div>
 
-          <div class="sun h-[170px] grid items-center justify-center text-center text-2xl bg-sky-300 rounded-3xl p-4">
+          <div class="sun h-44 grid items-center justify-center text-center text-2xl bg-sky-300 rounded-3xl p-4">
          <span>
           <i class="fa-solid fa-sun text-5xl"></i>
           <p><span id="SRValue" class="flex items-center text-2xl gap-3"></span> Sunrise</p>
@@ -59,19 +58,17 @@
          </span>
         </div>
 
-          <div class="clouds h-[170px] grid items-center justify-center text-2xl text-center bg-sky-300 rounded-3xl p-4">
+          <div class="clouds h-44 grid items-center justify-center text-2xl text-center bg-sky-300 rounded-3xl p-4">
           Clouds
           <i class="fa-solid fa-cloud text-5xl"></i>
           <h1 id="CValue"></h1>
         </div>
-
-          <div class="uv-index h-[170px] grid items-center justify-center text-2xl text-center bg-sky-300 rounded-3xl p-4">
+          <div class="uv-index h-44 grid items-center justify-center text-2xl text-center bg-sky-300 rounded-3xl p-4">
           Ground Level
           <i class="fa-solid fa-arrow-up-from-ground-water text-5xl"></i>
           <h1 id="UVValue"></h1>
         </div>
-
-          <div class="pressure h-[170px] grid items-center justify-center text-2xl text-center bg-sky-300 rounded-3xl p-4">
+          <div class="pressure h-44 grid items-center justify-center text-2xl text-center bg-sky-300 rounded-3xl p-4">
             pressure
           <i class="fa-solid fa-volcano text-5xl"></i>
           <h1 id="PValue"></h1>
@@ -81,7 +78,7 @@
       <br/>
 
       <h2 class="heading text-3xl text-center" id="heading1">This Week</h2>
-      <div class="Forecast grid grid-cols-[repeat(3,260px)] grid-flow-row gap-x-4 gap-y-2.5"></div>
+  <div class="Forecast grid grid-cols-3 gap-4"></div>
     </div>
 
    </div>
