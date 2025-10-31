@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="./src/input.css"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
   <title>My Weather App</title>
-  <script src="index.js">
-  </script>
+  <script src="index.js" defer></script>
 
   </head>
   <body class="body  h-full">
@@ -16,13 +15,13 @@
     <div class="weather-input w-[25%] fixed inset-[0] ">
       <div class="input-group relative flex items-center  ">
         <input class="inp bg-white capitalize text-base rounded-md w-full outline-none border-none text-center " type="text"  id="userLocation" placeholder="Search For Places.." />
-        <select class="converter absolute right-200px] h-14 bg-blue-500 rounded-b-sm border-none outline-none text-lg cursor-pointer" id="converter">
+        <select class="converter absolute right-[200px] h-14 bg-blue-500 rounded-b-sm border-none outline-none text-lg cursor-pointer" id="converter">
         <option class="but">°C</option>
           <option>°F</option>
         </select>
           
-        <i class="fa fa-location-dot absolute right-[30px]  text-gray-500 cursor-pointer text-2xl" onclick="getCurrentLocation()"></i>
-        <i class="fa fa-search absolute right-[5px] text-gray-500 cursor-pointer text-2xl" onclick="findUserLocation()"></i>
+  <i class="fa-solid fa-location-dot absolute right-[30px] text-gray-500 cursor-pointer text-2xl" onclick="getCurrentLocation()" aria-hidden="true"></i>
+  <i class="fa-solid fa-magnifying-glass absolute right-[5px] text-gray-500 cursor-pointer text-2xl" onclick="findUserLocation()" aria-hidden="true"></i>
       </div>
       <div class="weatherIcon  "></div>
       <h2 class="temperature text-7xl text-center flex font-light"></h2>
@@ -36,19 +35,19 @@
     <div class="weather-output w-[75%] fixed inset-0 bg-amber-200 overflow-auto">
       <h2 class="heading text-center text-3xl"  id="heading2">Today's Highlight</h2>
       <div class="Highlights grid grid-cols-[repeat(3,280px)] grid-flow-row gap-x-[10px] gap-y-[1rem]">
-        <div class="humidity h-[170px] grid items-center justify-center text-center text-2xl bg-sky-300 rounded-3xl p-[1rem] ">
+        <div class="humidity h-[170px] grid items-center justify-center text-center text-2xl bg-sky-300 rounded-3xl p-4 ">
           humidity
           <i class="fa-solid fa-water text-5xl"></i>
           <h1 id="HValue"></h1>
         </div>
 
-          <div class="wind-speed h-[170px] grid items-center justify-center text-center text-2xl bg-sky-300 rounded-3xl p-[1rem]" >
+          <div class="wind-speed h-[170px] grid items-center justify-center text-center text-2xl bg-sky-300 rounded-3xl p-4" >
           wind speed
           <i class="fa-solid fa-wind text-5xl"></i>
           <h1 id="WValue"></h1>
         </div>
 
-          <div class="sun h-[170px] grid items-center justify-center text-center text-2xl bg-sky-300 rounded-3xl p-[1rem]">
+          <div class="sun h-[170px] grid items-center justify-center text-center text-2xl bg-sky-300 rounded-3xl p-4">
          <span>
           <i class="fa-solid fa-sun text-5xl"></i>
           <p><span id="SRValue" class="flex items-center text-2xl gap-3"></span> Sunrise</p>
@@ -60,19 +59,19 @@
          </span>
         </div>
 
-          <div class="clouds h-[170px] grid items-center justify-center text-2xl text-center bg-sky-300 rounded-3xl p-[1rem]">
+          <div class="clouds h-[170px] grid items-center justify-center text-2xl text-center bg-sky-300 rounded-3xl p-4">
           Clouds
           <i class="fa-solid fa-cloud text-5xl"></i>
           <h1 id="CValue"></h1>
         </div>
 
-          <div class="uv-index h-[170px] grid items-center justify-center text-2xl text-center bg-sky-300 rounded-3xl p-[1rem]">
+          <div class="uv-index h-[170px] grid items-center justify-center text-2xl text-center bg-sky-300 rounded-3xl p-4">
           Ground Level
           <i class="fa-solid fa-arrow-up-from-ground-water text-5xl"></i>
           <h1 id="UVValue"></h1>
         </div>
 
-          <div class="pressure h-[170px] grid items-center justify-center text-2xl text-center bg-sky-300 rounded-3xl p-[1rem]">
+          <div class="pressure h-[170px] grid items-center justify-center text-2xl text-center bg-sky-300 rounded-3xl p-4">
             pressure
           <i class="fa-solid fa-volcano text-5xl"></i>
           <h1 id="PValue"></h1>
