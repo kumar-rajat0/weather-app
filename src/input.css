@@ -10,7 +10,6 @@ body{
     height: 100%;
 }
 
-
 .weather-input .feelslike,
 .weather-input .description,
 .weather-input .date,
@@ -155,9 +154,6 @@ body{
 
 @media(min-width:768px)and 
 (max-width:1024px){
-    body{
-       
-    }
     .weather-input{
         width: 45%;
         position: fixed;
